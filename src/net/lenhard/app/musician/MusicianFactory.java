@@ -4,7 +4,15 @@ package net.lenhard.app.musician;
  * MusicianFactory
  */
 public class MusicianFactory {
-	public Musician getMusician(String name, Instrument instrument) {
+
+	private MusicianFactory() { }
+	
+	/** 
+	 * @param name
+	 * @param instrument
+	 * @return Musician
+	 */
+	public static Musician getMusician(String name, Instrument instrument) {
 		Musician musician = null;
 
 		switch (instrument) {

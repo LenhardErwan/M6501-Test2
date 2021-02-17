@@ -2,10 +2,10 @@ package net.lenhard.app;
 
 import java.util.ArrayList;
 
-public class Subject {
+public abstract class Subject {
 	private ArrayList<ObserverInterface> observers;
 
-	public Subject() {
+	protected Subject() {
 		super();
 
 		this.observers = new ArrayList<>();
