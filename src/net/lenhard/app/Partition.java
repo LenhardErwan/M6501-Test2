@@ -12,18 +12,34 @@ public class Partition {
 		this.tonality = tonality;
 	}
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getName() {
 		return name;
 	}
 
+	
+	/** 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	
+	/** 
+	 * @return Tonality
+	 */
 	public Tonality getTonality() {
 		return tonality;
 	}
 
+	
+	/** 
+	 * @param tonality
+	 */
 	public void setTonality(Tonality tonality) {
 		this.tonality = tonality;
 	}

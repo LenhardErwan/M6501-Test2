@@ -8,6 +8,7 @@ import net.lenhard.app.musician.MusicianFactory;
  * App
  */
 public class App {
+	
 	public static void main(String[] args) {
 		MusicianFactory mf = new MusicianFactory();
 

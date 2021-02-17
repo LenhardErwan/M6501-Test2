@@ -21,30 +21,58 @@ public abstract class Musician implements ObserverInterface {
 		this.partitions = new ArrayList<>();
 	}
 
+	
+	/** 
+	 * @return String
+	 */
 	public String getName() {
 		return name;
 	}
 
+	
+	/** 
+	 * @param name
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	
+	/** 
+	 * @return Instrument
+	 */
 	public Instrument getInstrument() {
 		return instrument;
 	}
 
+	
+	/** 
+	 * @param instrument
+	 */
 	public void setInstrument(Instrument instrument) {
 		this.instrument = instrument;
 	}
 
+	
+	/** 
+	 * @return ArrayList<Partition>
+	 */
 	public ArrayList<Partition> getPartitions() {
 		return partitions;
 	}
 
+	
+	/** 
+	 * @param partitions
+	 */
 	public void setPartitions(ArrayList<Partition> partitions) {
 		this.partitions = partitions;
 	}
 
+	
+	/** 
+	 * @param partition
+	 */
 	@Override
 	public void event(Partition partition) {
 		System.out.println("(Musician) " + this.name + " received a new partition! > " + partition.getName());
